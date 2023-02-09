@@ -1,38 +1,178 @@
-.App {
+/* NAVBAR */
+.navImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 20%;
+}
+*{
+  font-family: 'Chakra Petch', sans-serif;
+  color: whitesmoke;
+ 
+}
+body{
+  background: linear-gradient(90deg, rgba(0,0,0,1) 35%, rgba(28,23,81,1) 100%);
+
+}
+/* .mainDiv {
+
+
+  background: #ff0f7b;
+
+  background: linear-gradient(90deg, #ff0f7b 0%, #f89c2a 100%);
+
+  background: -moz-linear-gradient(90deg, #ff0f7b 0%, #f89c2a 100%);
+
+  background: -webkit-linear-gradient(90deg, #ff0f7b 0%, #f89c2a 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF0F7B", endColorstr="#F89B29", GradientType=1 );
+} */
+
+/* Food Card */
+
+#imgfood{
+  /* width:100px; */
+  height: 200px;
+}
+.card {
+  box-shadow: 2px 4px 8px black;
+  background: #1b1b1b;
+  color: white;
+  border-radius: 10px;
+  width: 20rem;
+  margin-top: 40px;
+  margin-left: 40px;
+  /* max-height: 300px;  ALIGN ALL THE ITEMCARDS */
+}
+small {
+  font-weight: bolder;
+  display: flex;
+  justify-content: end;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+  overflow-y: hidden;
+}
+/* HOME-PAGE */
+.orderBtn{
   text-align: center;
 }
+button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+ }
+ 
+ button:hover {
+  background-color: #212047;
+  
+  color: #fff;
+  transform: translateY(-7px);
+ }
+ 
+ button:active {
+  transform: translateY(-1px);
+ }
+ .orderButton{
+  background: #212047;
+  
+ }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.homePage {
+  background-image: url(https://imgs.search.brave.com/kOFxr0fNlCJszx0qDQc8aQ79GkVFdVnVlOpTpFbNh2E/rs:fit:1024:576:1/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2JmLzYz/LzYzL2JmNjM2Mzg4/YTc1ZjEzOTRiZWZh/ODkzNjEzNTkxZTMy/LmpwZw);
+  background-size: cover;
+  height: 500px;
+}
+.intro {
+  font-family: "Indie Flower", cursive;
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 800;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.effect {
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+.heading {
+  font-family: "Rubik Moonrocks", cursive;
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+}
+a{
+  cursor:pointer;
+}
+.login{
+  color: #000;
+}
+.contact1{
+  display:flex;
+  float: inline-start;
+  justify-content: space-evenly;
+}
+input[type="text"],
+input[type="password"] {
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input[type="submit"] {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #01d28e;
+  border: 1px solid #01d28e;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+input[type="submit"]:hover {
+  background: #6cf0c2;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.list-container {
+  display: flex;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.input-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  gap: 8px;
+  margin: 10px;
 }
